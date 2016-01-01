@@ -1,0 +1,23 @@
+.onlinestate { 
+        position: fixed;
+        bottom: 0;
+        font-size: 0px;
+}
+.onlinestate:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        padding: 5px;
+        border: 5px solid white;
+        position: fixed;
+        bottom: 2%;
+        left: 1%;
+        box-shadow: 0px 0px 5px 0px #525252;
+}
+body.on .onlinestate:before {
+        background-color:  #2B915B;
+}
+body.off .onlinestate:before {
+        background-color:  #95020C; 
+}

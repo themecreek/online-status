@@ -1,0 +1,41 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "script",
+        "src": "app.js",
+        "moduleType": "global",
+        "depends": {
+          "github.com/jquery/jquery:jquery.js": "jQuery"
+        }
+      },
+      {
+        "type": "style",
+        "src": "app.css"
+      }
+    ]
+  },
+  "preview": {
+    "handlers": [
+      {
+        "options": ["*"],
+        "execute": "onlinestatus.setOptions(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+       "enable": {
+              "title": "TRUE or FALSE",
+              "description": "With a true or false you can choose if you wish to hide or show the icon or not when your online. It will still show up when you go offline.",
+              "default": "TRUE",
+              "order": 1,
+              "type": "string",
+              "maxLength": 5
+     }
+    }
+  },
+  "dependencies": {
+    "github.com/jquery/jquery": ">= 1.7.0, <= 1.11.0"
+  }
+}
