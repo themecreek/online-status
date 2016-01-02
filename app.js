@@ -1,24 +1,24 @@
 jQuery(document).ready(function($){
     
+    var options, setOptions, update;
+    
     if (!window.addEventListener || !window.localStorage || !window.requestAnimationFrame)
     return;
-    var options = INSTALL_OPTIONS;
+    options = INSTALL_OPTIONS;
     
-  function setOptions(opts) {
+  setOptions = function(opts) {
     options = opts;
 
-    render();
-    
-  }
+    update();
+  };
 // detect internet connection is on or not and display notice, do a better custom version then the one used on rainbow , using http://stackoverflow.com/questions/29802403/how-to-check-if-the-user-is-online-using-javascript-or-any-library
     $("body").append("<div class='onlinestate'> </div>");
    var $onlinestate = $('.onlinestate');
    var $body = $('body');
    // change this below to false if you want it to ONLY show up when you lose internet connection
-   if (options.enable === true) {
-        var appear = true;
-      } else if (options.enable === false) var appear = false;
-   
+   update = function() {
+        var appear = options.enable;   
+   };
    // ********************
    $(".onlinestate").hide("fast"); 
   
