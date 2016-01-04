@@ -1,23 +1,53 @@
-.onlinestate { 
-        position: fixed;
-        bottom: 0;
-        font-size: 0px;
+eager-online-state-app-state-indicator {
+  display: block;
+  cursor: default;
+  position: fixed;
+  font-family: inherit;
+  font-size: .8em;
+  bottom: 1.25em;
+  left: 1.25em
 }
-.onlinestate:before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        padding: 5px;
-        border: 5px solid white;
-        position: fixed;
-        bottom: 2%;
-        left: 1%;
-        box-shadow: 0px 0px 5px 0px #525252;
+
+eager-online-state-app-state-indicator[is-online]:not([show-when-online]) {
+  display: none
 }
-body.on .onlinestate:before {
-        background-color:  #2B915B;
+
+eager-online-state-app-state-indicator:before, eager-online-state-app-state-indicator:after {
+  font-family: inherit;
+  cursor: default;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%
 }
-body.off .onlinestate:before {
-        background-color:  #95020C; 
+
+eager-online-state-app-state-indicator:before {
+  content: '';
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: .25em solid white;
+  box-shadow: 0 0 .3125em rgba(0, 0, 0, .6);
+  background: #f00
+}
+
+eager-online-state-app-state-indicator[is-online]:before {
+  background: #5cca00
+}
+
+eager-online-state-app-state-indicator:not(:hover):after {
+  opacity: 0
+}
+
+eager-online-state-app-state-indicator:after {
+  content: 'Offline';
+  pointer-events: none;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-left: .6em
+}
+
+eager-online-state-app-state-indicator[is-online]:after {
+  content: 'Online'
 }
