@@ -1,13 +1,9 @@
 {
   "resources": {
-    "head": [
+    "body": [
       {
         "type": "script",
-        "src": "app.js",
-        "moduleType": "global",
-        "depends": {
-          "github.com/jquery/jquery:jquery.js": "jQuery"
-        }
+        "src": "app.js"
       },
       {
         "type": "style",
@@ -19,23 +15,18 @@
     "handlers": [
       {
         "options": ["*"],
-        "execute": "onlinestatus.setOptions(INSTALL_OPTIONS)"
+        "execute": "INSTALL_SCOPE.setOptions(INSTALL_OPTIONS)"
       }
     ]
   },
   "options": {
     "properties": {
-       "enable": {
-              "title": "TRUE or FALSE",
-              "description": "With a true or false you can choose if you wish to hide or show the icon or not when your online. It will still show up when you go offline.",
-              "default": "TRUE",
-              "order": 1,
-              "type": "string",
-              "maxLength": 5
-     }
+      "showWhenOnline": {
+        "type": "boolean",
+        "title": "Show the status icon to visitors even when they’re online.",
+        "description": "Regardless of this setting, when offline, visitors will always see an “Offline” status icon.",
+        "default": true
+      }
     }
-  },
-  "dependencies": {
-    "github.com/jquery/jquery": ">= 1.7.0, <= 1.11.0"
   }
 }
