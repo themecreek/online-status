@@ -1,4 +1,4 @@
-eager-online-state-app-state-indicator {
+eager-online-status-app-status-indicator {
   display: block;
   cursor: default;
   position: fixed;
@@ -8,11 +8,11 @@ eager-online-state-app-state-indicator {
   left: 1.25em
 }
 
-eager-online-state-app-state-indicator[is-online]:not([show-when-online]) {
+eager-online-status-app-status-indicator[is-online]:not([show-when-online]) {
   display: none
 }
 
-eager-online-state-app-state-indicator:before, eager-online-state-app-state-indicator:after {
+eager-online-status-app-status-indicator:before, eager-online-status-app-status-indicator:after {
   font-family: inherit;
   cursor: default;
   display: inline-block;
@@ -20,7 +20,7 @@ eager-online-state-app-state-indicator:before, eager-online-state-app-state-indi
   height: 100%
 }
 
-eager-online-state-app-state-indicator:before {
+eager-online-status-app-status-indicator:before {
   content: '';
   height: 1.5em;
   width: 1.5em;
@@ -31,15 +31,15 @@ eager-online-state-app-state-indicator:before {
   background: #f00
 }
 
-eager-online-state-app-state-indicator[is-online]:before {
+eager-online-status-app-status-indicator[is-online]:before {
   background: #5cca00
 }
 
-eager-online-state-app-state-indicator:not(:hover):after {
+eager-online-status-app-status-indicator:not(:hover):after {
   opacity: 0
 }
 
-eager-online-state-app-state-indicator:after {
+eager-online-status-app-status-indicator:after {
   content: 'Offline';
   pointer-events: none;
   line-height: 1.5;
@@ -48,6 +48,6 @@ eager-online-state-app-state-indicator:after {
   margin-left: .6em
 }
 
-eager-online-state-app-state-indicator[is-online]:after {
+eager-online-status-app-status-indicator[is-online]:after {
   content: 'Online'
 }

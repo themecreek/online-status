@@ -1,7 +1,7 @@
 (function(){
   var options = INSTALL_OPTIONS;
 
-  var statusEl = document.createElement('eager-online-state-app-state-indicator');
+  var statusEl = document.createElement('eager-online-status-app-status-indicator');
   document.body.appendChild(statusEl);
   statusEl.setAttribute('is-online', 'true');
 
