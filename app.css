@@ -42,10 +42,17 @@ eager-online-status-app-status-indicator:not(:hover):after {
 eager-online-status-app-status-indicator:after {
   content: 'Offline';
   pointer-events: none;
-  line-height: 1.5;
+  line-height: normal;
   text-transform: uppercase;
   letter-spacing: .06em;
-  margin-left: .6em
+  margin-left: .6em;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 0.8em;
+  text-shadow: 0em 0em 0.111em black;
+  font-weight: bold
 }
 
 eager-online-status-app-status-indicator[is-online]:after {
