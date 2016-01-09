@@ -49,9 +49,9 @@ eager-online-status-app-status-indicator:after {
   background-color: white;
   color: black;
   padding: 5px;
+  font-weight: bold;      
   border-radius: 5px;
-  font-size: .8em;
-  font-weight: bold
+  font-size: .8em
 }
 
 eager-online-status-app-status-indicator[is-online]:after {
