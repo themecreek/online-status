@@ -6,4 +6,4 @@ Install with Eager:
   <img src="https://install.eager.io/install-button.png" border="0" width="126">
 </a>
 
-To manually install simply include the `app.js` and `app.css` files like any other JavaScript library.
+To manually install go to the **vanilla** folder and locate `app.js` and `app.css` and install like any other JavaScript library.
