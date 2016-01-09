@@ -8,4 +8,6 @@ install simply include the `app.js` in footer or body and `app.css` in header li
 
 ## Enable / Disable
 
-If you wish to turn the online status icon off and make it only show up if you go offline change the appear true to appear false. 
+If you wish to turn the online status icon off and make it only show up if you go offline change the appear statement from TRUE too FALSE. 
+
+You can find this setting [**on line 5**](https://github.com/themecreek/online-status/blob/master/vanilla/app.js#L5). 
