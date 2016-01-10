@@ -8,6 +8,6 @@ Install with Eager:
 
 To manually install go to the **vanilla** folder and locate `app.js` and `app.css` and install like any other JavaScript library.
 
-## License: GNU GENERAL PUBLIC LICENSE 
+## License: GNU V 2.0
 
 You are not allowed to use this for commerical uses at this time, keep it free. 
