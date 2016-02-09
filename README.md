@@ -15,6 +15,7 @@ You are not allowed to use this for commerical uses at this time, keep it free f
 ## Changelog 
 
 **9 februari 2016**
+
 --*v1.3.0*--
 > Added a new feature that you can turn on or off that disables submit buttons when you lose your connection.  
 
