@@ -26,6 +26,12 @@
         "title": "Show the status icon to visitors even when they’re online.",
         "description": "Regardless of this setting, when offline, visitors will always see an “Offline” status icon.",
         "default": true
+      },
+      "DisableSubmit": {
+        "type": "boolean",
+        "title": "Disable the submit buttons on all forms",
+        "description": "When the user loses connection the submit button turns disabled to prevent data loss.",
+        "default": true
       }
     }
   }

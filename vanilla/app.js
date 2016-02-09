@@ -21,12 +21,19 @@
   };
   render();
   var checkOnlineStatus = function() {
+    checkform = document.forms.length;
     var img = new Image();
-    img.onload = function() {
-      onstatus.setAttribute('is-online', '');
+    img.onload = function() {     
+      onstatus.setAttribute('is-online', '');   
+      if (checkform >= 1) {       
+      var submitButtons = document.querySelectorAll('input[type=submit], button'); for (var i=0; i < submitButtons.length; i++) submitButtons[i].disabled = false;
+      }
     };
     img.onerror = function() {
       onstatus.removeAttribute('is-online');
+      if (checkform >= 1) {
+      var submitButtons = document.querySelectorAll('input[type=submit], button'); for (var i=0; i < submitButtons.length; i++) submitButtons[i].disabled = true;
+      }
     };
     img.src = '//www.google-analytics.com/__utm.gif';
   };
