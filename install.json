@@ -22,16 +22,37 @@
   "options": {
     "properties": {
       "showWhenOnline": {
+        "order": 1,
         "type": "boolean",
         "title": "Show the status icon to visitors even when they’re online.",
         "description": "Regardless of this setting, when offline, visitors will always see an “Offline” status icon.",
         "default": true
       },
       "DisableSubmit": {
+        "order": 2,
         "type": "boolean",
         "title": "Disable the submit buttons on all forms",
         "description": "When the user loses connection the submit button turns disabled to prevent data loss.",
         "default": true
+      },
+      "position": {
+        "order": 3,
+        "title": "Position",
+        "type": "string",
+        "enum": [
+          "top-left",
+          "top-right",
+          "bottom-left",
+          "bottom-right"
+        ],
+        "enumNames": {
+          "top-left": "Top left corner",
+          "top-right": "Top right corner",
+          "bottom-left": "Bottom left corner",
+          "bottom-right": "Bottom right corner"
+        },
+        "format": "radios",
+        "default": "bottom-left"
       }
     }
   }

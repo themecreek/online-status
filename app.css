@@ -3,9 +3,7 @@ eager-online-status-app-status-indicator {
   cursor: default;
   position: fixed;
   font-family: inherit;
-  font-size: .8em;
-  bottom: 1.25em;
-  left: 1.25em
+  font-size: .8em
 }
 
 eager-online-status-app-status-indicator[is-online]:not([show-when-online]) {
@@ -51,9 +49,19 @@ eager-online-status-app-status-indicator:after {
   padding: 5px;
   font-weight: bold;      
   border-radius: 5px;
-  font-size: .8em
+  font-size: .8em;
+  display: inline
 }
 
 eager-online-status-app-status-indicator[is-online]:after {
   content: 'Online'
 }
+
+.online-status-position {
+    z-index: 5555
+}
+
+.online-status-position-top-left     { top:    2em; left:  2em }
+.online-status-position-top-right    { top:    2em; right: 1.5em }
+.online-status-position-bottom-left  { bottom: 2em; left:  2em }      
+.online-status-position-bottom-right { bottom: 2em; right: 1em }
