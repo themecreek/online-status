@@ -6,7 +6,7 @@ Install with Eager:
   <img src="https://install.eager.io/install-button.png" border="0" width="126">
 </a>
 
-To manually install go to the **vanilla** folder and locate `app.js` and `app.css` and install like any other JavaScript library.
+To manually install go to the **vanilla** folder and locate `onlinestatus.js` and `onlinestatus.css` and install like any other JavaScript library.
 
 ## License: GNU V 2.0
 
