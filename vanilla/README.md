@@ -4,7 +4,7 @@ The Vanilla version is to be used without Eager.io
 
 ## installation 
 
-install simply include the `app.js` in footer or body and `app.css` in header like any other JavaScript library.
+install simply include the `oninestatus.js` in footer or body and `onlinestatus.css` in header like any other JavaScript library.
 
 ## Enable / Disable
 
