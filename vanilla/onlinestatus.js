@@ -28,12 +28,14 @@
       if (checkform >= 1) {       
       var submitButtons = document.querySelectorAll('input[type=submit], button'); for (var i=0; i < submitButtons.length; i++) submitButtons[i].disabled = false;
       }
+      setTimeout(checkOnlineStatus, 10 * 1000);
     };
     img.onerror = function() {
       onstatus.removeAttribute('is-online');
       if (checkform >= 1) {
       var submitButtons = document.querySelectorAll('input[type=submit], button'); for (var i=0; i < submitButtons.length; i++) submitButtons[i].disabled = true;
       }
+      setTimeout(checkOnlineStatus, 10 * 1000);
     };
     img.src = '//www.google-analytics.com/__utm.gif';
   };
