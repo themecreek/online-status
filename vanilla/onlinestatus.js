@@ -38,5 +38,5 @@
     img.src = '//www.google-analytics.com/__utm.gif';
   };
   checkOnlineStatus();
-  setInterval(checkOnlineStatus, 10 * 1000);
+  setTimeout(checkOnlineStatus, 10 * 1000);
 })();
