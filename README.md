@@ -1,3 +1,5 @@
+<img src="http://forthebadge.com/images/badges/built-with-love.svg" border="0">
+
 Online Status is a simple app for displaying to a website visitor whether their device is currently connected to the internet.
 
 Install with Eager:
