@@ -1,3 +1,5 @@
+Copyright [2016] [Max Pen] [http//home.miscy.net & http://home.themecreek.net] 
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
