@@ -18,7 +18,7 @@ eager-online-status-app-status-indicator:before, eager-online-status-app-status-
   height: 100%
 }
 
-eager-online-status-app-status-indicator:before {
+eager-online-status-app-status-indicator:before  {  
   content: '';
   height: 1.5em;
   width: 1.5em;
@@ -34,10 +34,10 @@ eager-online-status-app-status-indicator[is-online]:before {
 }
 
 eager-online-status-app-status-indicator:not(:hover):after {
-  opacity: 0
+  opacity: 0 
 }
 
-eager-online-status-app-status-indicator:after {
+.online-status-position-top-left:after, .online-status-position-bottom-left:after  {
   content: 'Offline';
   pointer-events: none;
   line-height: normal;
@@ -53,7 +53,7 @@ eager-online-status-app-status-indicator:after {
   display: inline
 }
 
-eager-online-status-app-status-indicator[is-online]:after {
+.online-status-position-top-left[is-online]:after, .online-status-position-bottom-left[is-online]:after {
   content: 'Online'
 }
 
@@ -62,6 +62,6 @@ eager-online-status-app-status-indicator[is-online]:after {
 }
 
 .online-status-position-top-left     { top:    2em; left:  2em }
-.online-status-position-top-right    { top:    2em; left: 98% }
+.online-status-position-top-right    { top:    2em; left: 97% }
 .online-status-position-bottom-left  { bottom: 2em; left:  2em }      
-.online-status-position-bottom-right { bottom: 2em; left: 98% }
+.online-status-position-bottom-right { bottom: 2em; left: 97% }
