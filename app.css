@@ -62,6 +62,6 @@ eager-online-status-app-status-indicator[is-online]:after {
 }
 
 .online-status-position-top-left     { top:    2em; left:  2em }
-.online-status-position-top-right    { top:    2em; right: 1.5em }
+.online-status-position-top-right    { top:    2em; left: 98% }
 .online-status-position-bottom-left  { bottom: 2em; left:  2em }      
-.online-status-position-bottom-right { bottom: 2em; right: 1em }
+.online-status-position-bottom-right { bottom: 2em; left: 98% }
